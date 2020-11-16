@@ -1,0 +1,18 @@
+server:
+  port: 9010
+
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: admin
+    url: jdbc:postgresql://localhost:5432/Plates
+
+  jpa:
+    hibernate:
+      ddl-auto: update
